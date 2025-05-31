@@ -1,25 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHtml5,
   faCss3Alt,
-  faJs,
-  faReact,
   faPython,
   faFigma,
 } from "@fortawesome/free-brands-svg-icons";
-import { faDatabase, faNetworkWired } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDatabase,
+  faNetworkWired,
+  faLock,
+} from "@fortawesome/free-solid-svg-icons";
 import "./TechStack.css";
 
 const techStacks = [
   { id: 1, icon: faHtml5, title: "HTML", hoverColor: "#e34f26" },
   { id: 2, icon: faCss3Alt, title: "CSS", hoverColor: "#1572b6" },
-  { id: 3, icon: faJs, title: "JavaScript", hoverColor: "#f7df1e" },
-  { id: 4, icon: faReact, title: "React", hoverColor: "#61dafb" },
-  { id: 5, icon: faPython, title: "Python", hoverColor: "#3776ab" },
-  { id: 6, icon: faDatabase, title: "MySQL", hoverColor: "#4479a1" },
-  { id: 7, icon: faNetworkWired, title: "Networking", hoverColor: "#2d89ef" },
-  { id: 8, icon: faFigma, title: "Figma", hoverColor: "#f24e1e" },
+  { id: 3, icon: faPython, title: "Python", hoverColor: "#3776ab" },
+  { id: 4, icon: faDatabase, title: "MySQL", hoverColor: "#4479a1" },
+  { id: 5, icon: faNetworkWired, title: "Networking", hoverColor: "#2d89ef" },
+  { id: 6, icon: faFigma, title: "Figma", hoverColor: "#f24e1e" },
+  { id: 7, icon: faLock, title: "Cyber Tech", hoverColor: "#4b0082" }, // Indigo or any preferred color
 ];
 
 const TechStack = () => {
@@ -30,9 +31,8 @@ const TechStack = () => {
     const y = e.clientY - rect.top;
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
-    const rotateX = ((y - centerY) / centerY) * 10; // Adjust 10 for sensitivity
+    const rotateX = ((y - centerY) / centerY) * 10;
     const rotateY = ((centerX - x) / centerX) * 10;
-
     card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   };
 
