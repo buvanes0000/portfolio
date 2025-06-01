@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 import "./Contact.css";
 
 export default function Contact() {
-  const { register, reset, handleSubmit, setValue, watch } = useForm();
+  const { register, reset, handleSubmit, setValue } = useForm();
 
   const [isSuccess, setIsSuccess] = useState(false);
   const [result, setResult] = useState(null);
@@ -19,15 +18,14 @@ export default function Contact() {
     settings: {
       from_name: "Acme Inc",
       subject: "New Contact Message from your Website",
-      // ... other settings
     },
-    onSuccess: (msg, data) => {
+    onSuccess: (msg) => {
       setIsSuccess(true);
       setResult(msg);
       reset();
-      setHcaptchaToken(null); // reset hcaptcha token
+      setHcaptchaToken(null);
     },
-    onError: (msg, data) => {
+    onError: (msg) => {
       setIsSuccess(false);
       setResult(msg);
     },
@@ -44,13 +42,17 @@ export default function Contact() {
       setIsSuccess(false);
       return;
     }
-
     onSubmit(data);
   };
 
   return (
-    <>
     <div className="contact" id="contact">
+      <div className="bubbles">
+        {[...Array(30)].map((_, i) => (
+          <div key={i} className="bubble"></div>
+        ))}
+      </div>
+
       <h2>Tell about Yourself</h2>
       <form onSubmit={handleSubmit(handleFormSubmit)}>
         <input
@@ -78,11 +80,8 @@ export default function Contact() {
       </form>
 
       {result && (
-        <div className={isSuccess ? "success" : "error"} >
-          {result}
-        </div>
+        <div className={isSuccess ? "success" : "error"}>{result}</div>
       )}
     </div>
-    </>
   );
 }

@@ -49,7 +49,7 @@ const Home = () => {
             </h1>
 
             <p>Learning Can't Get Enough</p>
-            <Link to="./about"><button className="button-48" role="button"><span className="text">Meet Buvanes</span></button></Link>
+            <Link to="./projects"><button className="button-48" role="button"><span className="text">Projects</span></button></Link>
           </div>
           <div className="animation">
             <Lottie options={defaultOptions} height={400} width={400} />
