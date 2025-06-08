@@ -37,8 +37,8 @@ export default function About() {
        
 
         <div className="about-para">
-        <p>Hey there, awesome coders and curious minds! 👋 I'm Buvanes, diving headfirst into the thrilling world of Cyber Security. 🚀 Every day is an adventure as I unravel the mysteries of code and learn to secure the digital frontier. 🌐 Ready to explore, grow, and make my mark in this ever-evolving field. Let's connect and inspire each other!</p>
-<p>Curious about what I've been working on? 🎨 Check out my creations in the <strong>Portfolio</strong> section. See you there! 👉</p>
+        <p>Hey there, awesome coders and curious minds! 👋 I'm Buvanes, diving headfirst into the thrilling world of Cyber Security.  Every day is an adventure as I unravel the mysteries of code and learn to secure the digital frontier.  Ready to explore, grow, and make my mark in this ever-evolving field. Let's connect and inspire each other!</p>
+<p>Curious about what I've been working on?  Check out my creations in the <strong>Portfolio</strong> section. See you there! 👉</p>
 
         </div>
       

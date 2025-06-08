@@ -29,7 +29,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/buvaneswaran-v-07013518b" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="social-icon" />
           </a>
-          <a href="mailto:your-email@example.com">
+          <a href="mailto:buvanesh454@gmail.com">
             <FaEnvelope className="social-icon" />
           </a>
         </div>
