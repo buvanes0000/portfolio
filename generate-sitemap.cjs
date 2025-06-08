@@ -4,11 +4,13 @@ const { createWriteStream } = require("fs");
 const path = require("path");
 
 const urls = [
-  { url: "/", changefreq: "daily", priority: 1.0 },
-  { url: "/about", changefreq: "monthly", priority: 0.8 },
-  { url: "/contact", changefreq: "monthly", priority: 0.7 },
-  { url: "/projects", changefreq: "monthly", priority: 0.4 }
+  { url: '/', changefreq: 'daily', priority: 1.0 },
+  { url: '/#/', changefreq: 'monthly', priority: 0.9 },
+  { url: '/#/about', changefreq: 'monthly', priority: 0.8 },
+  { url: '/#/contact', changefreq: 'monthly', priority: 0.7 },
+  { url: '/#/projects', changefreq: 'monthly', priority: 0.6 },
 ];
+
 
 const sitemap = new SitemapStream({
   hostname: "https://www.buvanes.com",
