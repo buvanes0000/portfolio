@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-// Make sure this is the correct plugin you're using
-import createSitemap from "vite-plugin-pages-sitemap";
+import createSitemap from "vite-plugin-sitemap";
 
 export default defineConfig({
   plugins: [
