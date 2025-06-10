@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaFacebook, FaInstagram, FaEnvelope, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -20,7 +20,7 @@ const Footer = () => {
       ></div>
       <div className="footer-content">
         <div className="footer-logo">
-          <h2 style={{ fontFamily:  "VT323, serif"  }}>Buvanes</h2>
+          <h2 style={{ fontFamily: "VT323, serif" }}>Buvanes</h2>
         </div>
         <div className="footer-socials">
           <a href="https://www.facebook.com/profile.php?id=61558372202884" target="_blank" rel="noopener noreferrer">
@@ -29,8 +29,8 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/buvaneswaran-v-07013518b" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="social-icon" />
           </a>
-          <a href="mailto:buvanesh454@gmail.com">
-            <FaEnvelope className="social-icon" />
+          <a href="https://www.instagram.com/buvaneswaran_vinayagam?igsh=NGtqN2JzODNpODgy" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="social-icon" />
           </a>
         </div>
       </div>

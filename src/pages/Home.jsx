@@ -35,7 +35,7 @@ const Home = () => {
           <div className="content">
             <h1>
               <span className="static-text" >I am </span>
-              <div className="typewriter-container">
+              <div className="typewriter-container glitch">
                 <Typewriter
                   words={[" Buvanes", "SOC Analyst"]}
                   loop={true}

@@ -53,7 +53,7 @@ const Projects = () => {
       description:
         "This is My first Freelance multipage react Website for the startup Social media company",
 
-      link: "https://dottmediatn.com",
+      link: "https://buvanes0000.github.io/dottmedia/",
       tech: [tailwind, js, reactlogo],
     },
 
