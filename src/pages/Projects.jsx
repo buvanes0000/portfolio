@@ -31,12 +31,12 @@ const Projects = () => {
       tech: [html, js], 
     },
     {
-      name: "Password Strength Checker",
+      name: "LockScore",
       animation: passwordAnimation,
       description:
-        "This was my first cybersecurity project. It checks password strength by comparing user input against the common password list from rockyou.txt to help users avoid weak or commonly used passwords.",
-      link: "https://buvanes0000.github.io/password-strength-checker/",
-      tech: [html, js], 
+        "My first cybersecurity project — a password checker that uses client-side validation and the Have I Been Pwned API to detect breached passwords, showing a visual strength score based on security criteria",
+      link: "https://lockscore.buvanes.com/",
+      tech: [reactlogo], 
     },
     {
       name: "King Tech Builders",
@@ -44,7 +44,7 @@ const Projects = () => {
       description:
         "This is My freelance web project for the startup construction company",
       link: "https://kingtechbuilders.com",
-      tech: [tailwind, js, reactlogo],
+      tech: [tailwind, reactlogo],
     },
 
     {
@@ -54,7 +54,7 @@ const Projects = () => {
         "This is My first Freelance multipage react Website for the startup Social media company",
 
       link: "https://buvanes0000.github.io/dottmedia/",
-      tech: [tailwind, js, reactlogo],
+      tech: [tailwind, reactlogo],
     },
 
     {
@@ -64,7 +64,7 @@ const Projects = () => {
         "This is a assignment was given by the employer for the previous Internship Interview",
 
       link: "https://buvanes0000.github.io/clever_books/",
-      tech: [tailwind, js, reactlogo],
+      tech: [tailwind, reactlogo],
     },
     {
       name: "Echo",
@@ -72,7 +72,7 @@ const Projects = () => {
       description:
         'I crafted an elegant "watch" website using Tailwind CSS and React JS, offering a seamless and intuitive platform for users to enjoy a curated selection of content.',
       link: "https://buvanes0000.github.io/Echo/",
-      tech: [tailwind, js, reactlogo],
+      tech: [tailwind, reactlogo],
     },
 
     {
@@ -81,7 +81,7 @@ const Projects = () => {
       description:
         "This is the Project Sharp Natural SPA (Single Page Application) website. It represents a modern approach to creating interactive web experiences for spa services.",
       link: "https://buvanes0000.github.io/sharp-spa/",
-      tech: [sass, js, reactlogo],
+      tech: [sass, reactlogo],
     },
     {
       name: "Steer X",
