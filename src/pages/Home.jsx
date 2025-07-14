@@ -37,7 +37,7 @@ const Home = () => {
               <span className="static-text" >I am </span>
               <div className="typewriter-container glitch">
                 <Typewriter
-                  words={[" Buvanes", "SOC Analyst"]}
+                  words={[" Buvanes", "Web Developer","Security Analyst"]}
                   loop={true}
                   cursor
                   cursorStyle='|'
@@ -48,7 +48,7 @@ const Home = () => {
               </div>
             </h1>
 
-            <p>Learning Can't Get Enough</p>
+            <p>Welcome to my personal website — a space where I share my journey in web development and cybersecurity.</p>
             <Link to="./projects"><button className="button-48" role="button"><span className="text">Projects</span></button></Link>
           </div>
           <div className="animation">
